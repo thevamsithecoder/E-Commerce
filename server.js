@@ -14,7 +14,8 @@ dotenv.config()
 app.use(cors())
 
 app.use(express.json()) //enableing json so that we send the data in the form of json
-app.use(express.static(path.join(__dirname, "./Client/dist")));
+
+app.use(express.static(path.join(__dirname, "dist")));
 
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/category", categoryRoutes);
