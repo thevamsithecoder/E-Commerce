@@ -1,0 +1,14 @@
+.navbar {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px grey;
+  background-color:#bb79d1 !important;
+}
+
+.navbar a:hover {
+  font-weight: 700;
+}
