@@ -17,12 +17,13 @@ app.use(express.json()) //enableing json so that we send the data in the form of
 
 app.use(express.static(path.join(__dirname, "dist")));
 
+
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/category", categoryRoutes);
 app.use("/api/v1/product", productRoutes)
 
 app.use("*", function(req,res) {
-  res.sendFile(path.join(__dirname, "./Client/dist/index.html"))
+  res.sendFile(path.join(__dirname, "dist" ,"index.html"))
 })
 
 const PORT = process.env.PORT || 8080;
