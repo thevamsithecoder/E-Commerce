@@ -43,7 +43,7 @@ router.get("/orders", requireLogin, getOrdersController);
 //all orders
 router.get("/all-orders", requireLogin, isAdmin, getAllOrdersController);
 
-
 //order status update
 router.put("/order-status/:orderId",  requireLogin, isAdmin, orderStatusController);
+
 module.exports = router;

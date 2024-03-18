@@ -5,7 +5,7 @@ const orderModel = require("../models/orderModel");
 
 const registerController = async (req,res) => {
   try {
-    const {name, email, password, phone, address, answer} = req.body;
+    const { name, email, password, phone, address, answer } = req.body;
     //validation
     if(!name) {
       return res.send({message: "Name is Required"})//name section is blank then display to the user name is required
